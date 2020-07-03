@@ -5,3 +5,4 @@ jupyter nbextension enable exercise2/main
 jupyter nbextension enable latex_envs/latex_envs
 
 jupyter trust sandbox/video.ipynb
+jupyter trust sandbox/quiz.ipynb

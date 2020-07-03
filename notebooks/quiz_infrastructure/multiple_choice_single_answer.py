@@ -5,7 +5,7 @@ from IPython.display import clear_output
 
 ''''Credit: The following code is based on this: https://github.com/jupyter-widgets/ipywidgets/issues/2487'''
 
-def create_multipleChoice_widget(description, options, correct_answer):
+def create_multiple_choice_widget(description, options, correct_answer):
     if correct_answer not in options:
         options.append(correct_answer)
 
@@ -27,15 +27,15 @@ def create_multipleChoice_widget(description, options, correct_answer):
     def check_selection(b):
         a = int(alternativ.value)
         if a == correct_answer_index:
-            s = '\x1b[6;30;42m' + "Riktig." + '\x1b[0m' + "\n"  # green color
+            s = '\x1b[6;30;42m' + "Correct!" + '\x1b[0m' + "\n"  # green color
         else:
-            s = '\x1b[5;30;41m' + "Feil. " + '\x1b[0m' + "\n"  # red color
+            s = '\x1b[5;30;41m' + "Incorrect ... try again " + '\x1b[0m' + "\n"  # red color
         with feedback_out:
             clear_output()
             print(s)
         return
 
-    check = widgets.Button(description="submit")
+    check = widgets.Button(description="Check your answer")
     check.on_click(check_selection)
 
     return widgets.VBox([description_out, alternativ, check, feedback_out])

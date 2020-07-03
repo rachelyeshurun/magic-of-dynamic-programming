@@ -1,0 +1,13 @@
+
+    .onoffswitch-inner:before {
+        content: "Hide Solution";
+        padding-left: 10px;
+        background-color: #94A7C1; color: #FFFFFF;
+       }
+
+    .onoffswitch-inner:after {
+        content: "Show Solution";
+        padding-right: 10px;
+        background-color: #94A7C1; color: #999999;
+        text-align: right;
+    }
