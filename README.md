@@ -13,3 +13,7 @@ This video explains a bit about why I embarked on this project.
 **TODO:** This course was developed as my final project 'Educational Technology'
 
 **TODO:** Insert here youtube link to the "The Making of Magic - Presentation of final project"
+
+----
+Temporary binder link to dev branch: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/dev)
+----
