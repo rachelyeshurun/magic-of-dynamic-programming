@@ -51,7 +51,7 @@ def main(argv):
 
     def check_answers():
 
-        #run through each option    
+        #run through each option
         return
 
     submit_button.on_click(check_answers)
