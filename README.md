@@ -3,7 +3,7 @@
    <!--img src="imgur.link.png" alt="Magic of Dynamic Programming" title="Magic of Dynamic Programming" /-->
 </h1>
 <p align="center">  
- <a href="https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/dev?urlpath=lab"><img src="https://mybinder.org/badge_logo.svg"></a>
+ <a href="https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/dev"><img src="https://mybinder.org/badge_logo.svg"></a>
 <img src="https://www.repostatus.org/badges/latest/wip.svg"></a>
 <img src="https://img.shields.io/badge/last%20updated-July%202020-blue">
 </p>
