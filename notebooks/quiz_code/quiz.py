@@ -8,7 +8,7 @@ import sys
 
 def create_multi_answer_widget(options):
 
-    options_dict = {option['id']: widgets.Checkbox(description=option['answer'], value=False, style={'description_width': 'initial'}) for option in options}
+    options_dict = {option['id']: widgets.Checkbox(description=option['answer'], value=False, layout=Layout(width='1000px'), style={'description_width': 'initial'}) for option in options}
     checkboxes = list(options_dict.values())
 
     # for each option, create a feedback box on the left and a checkbox on the right
@@ -88,8 +88,10 @@ def create_multi_answer_widget(options):
                 lost_points += 1
 
         # update the score label
+        text = 'Score:  ' + str(num_options - lost_points) + '/' + str(num_options) + ' pts'
         if lost_points == 0:
-            score_label.value = 'All correct!'
+            score_label.value = text + ' ;-)'
+            #$\ddot\smile$'
             option_widget.box_style = 'success'
             score_widget.box_style = 'success'
             multi_answer.box_style = 'success'
@@ -97,7 +99,7 @@ def create_multi_answer_widget(options):
             option_widget.box_style = 'danger'
             score_widget.box_style = 'danger'
             multi_answer.box_style = 'danger'
-            score_label.value = 'Score:  ' + str(num_options - lost_points) + ' / ' + str(num_options) + ' pts'
+            score_label.value = text
 
     submit_button.on_click(check_answers)
     return(multi_answer)
