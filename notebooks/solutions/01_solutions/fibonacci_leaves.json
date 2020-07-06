@@ -1,4 +1,5 @@
 {
+    "type": "multi-answer",
     "question": "What is your name?",
     "options": [
         {
