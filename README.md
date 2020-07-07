@@ -33,7 +33,7 @@
 
 * **Lesson 0: Review**
   * Video - [Recursion: sum of n numbers](https://youtu.be/roqumrTB9g0)
-  * Notebook - [Lesson 0](./notebooks/00_introduction.ipynb)
+  * Notebook - [Lesson 0](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?filepath=notebooks%2F00_introduction.ipynb)
   
 * **Lesson 1: Fibonacci Numbers**
   * Video - [Fibonacci top down]
