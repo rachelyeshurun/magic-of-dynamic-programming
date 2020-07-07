@@ -6,4 +6,4 @@ jupyter nbextension enable hide_input/main
 jupyter nbextension enable toc2/main
 
 jupyter trust notebooks/*.ipynb
-jupyter trust notebooks/experiments/*.ipynb
+jupyter trust notebooks/experimental_notebooks/*.ipynb

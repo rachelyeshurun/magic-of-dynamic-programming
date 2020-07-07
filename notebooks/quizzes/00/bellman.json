@@ -1,6 +1,6 @@
 {
     "type": "multi-answer",
-    "question": "",
+    "question": "Check the statement below that best summarize Richard Bellman's own explanation of the term dynamic programming.",
     "options": [
         {
             "id": "1",
@@ -9,12 +9,12 @@
         },
         {
             "id": "2",
-            "answer": "The term 'dynamic' was used to indicate that time plays a role.",
+            "answer": "The term 'dynamic' is used to indicate that time plays a role.",
             "correct": true
         },
         {
             "id": "3",
-            "answer": "Dynamic programming is concerned with sequences of operations where preceding operations are independent of the next",
+            "answer": "In dynamic programming, the outcomes of each operation in a process are independant.",
             "correct": false
         },
         {
@@ -24,7 +24,7 @@
         },
         {
             "id": "5",
-            "answer": "In dynamic programming, the order of performance of operations is not important.",
+            "answer": "In dynamic programming, the order of performance of operations is not at all important.",
             "correct": false
         }
 
