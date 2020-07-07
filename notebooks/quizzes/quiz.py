@@ -7,11 +7,9 @@ import json
 import sys
 import random
 
-first_try_flag = False
 
 def create_multi_answer_widget(question, options):
 
-    global first_try_flag
     question_widget = Label(value=question)
     options_dict = {option['id']: widgets.Checkbox(description=option['answer'], value=False, layout=Layout(width='1000px'), style={'description_width': 'initial'}) for option in options}
     checkboxes = list(options_dict.values())
@@ -46,10 +44,7 @@ def create_multi_answer_widget(question, options):
     #multi_answer = widgets.VBox([option_widget, score_widget])
     multi_answer.box_style = 'info'
 
-    # question text will be in markdown before the quiz (for now) - easily allows interesting questions with code, formulas etc.
     # compare checkbox value with original
-    first_try_flag = True
-
     def check_answers(b):
 
         #run through each option, compare expected answer (checked/unchecked) with actual student answer
@@ -103,8 +98,6 @@ def create_multi_answer_widget(question, options):
 
         # update the score label
         if incorrect + missing == 0:
-
-            #$\ddot\smile$'
             option_widget.box_style = 'success'
             score_widget.box_style = 'success'
             multi_answer.box_style = 'success'
@@ -112,10 +105,10 @@ def create_multi_answer_widget(question, options):
             submit_button.style.button_color = 'lightgreen'
             cb.disabled = True
 
-            if first_try_flag == True:
+            if submit_button.description == 'Submit':
                 text = random.choice(['Perfect!', 'Your\'re on a roll!', 'Keep up the good work!', 'All correct!', 'Correct!',
                                   'Success!', '100% !!', 'Perfect ;-) ', 'Excellent!', 'You got it!', 'You\'re the best',
-                                             'You got an A!', 'Nice job, rock star!', 'Hurray for you!'])
+                                             'You got an A+', 'Nice job, rock star!', 'Hurray for you!', 'Great work!'])
             else:
                 text = 'Very good'
         else:
@@ -124,7 +117,6 @@ def create_multi_answer_widget(question, options):
             multi_answer.box_style = 'danger'
             submit_button.style.button_color = 'pink'
 
-            first_try_flag = False
             submit_button.description = 'Submit again'
             for i in range(num_options):
                 opt = option_widget.children[i]
