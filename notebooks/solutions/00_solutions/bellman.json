@@ -1,0 +1,32 @@
+{
+    "type": "multi-answer",
+    "question": "",
+    "options": [
+        {
+            "id": "1",
+            "answer": "The term 'programming' means 'planning'",
+            "correct": true
+        },
+        {
+            "id": "2",
+            "answer": "The term 'dynamic' was used to indicate that time plays a role.",
+            "correct": true
+        },
+        {
+            "id": "3",
+            "answer": "Dynamic programming is concerned with sequences of operations where preceding operations are independent of the next",
+            "correct": false
+        },
+        {
+            "id": "4",
+            "answer": "Dynamic programming is concerned with planning a process that has multiple stages.",
+            "correct": true
+        },
+        {
+            "id": "5",
+            "answer": "In dynamic programming, the order of performance of operations is not important.",
+            "correct": false
+        }
+
+    ]
+}

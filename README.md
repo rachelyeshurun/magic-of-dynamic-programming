@@ -3,7 +3,7 @@
    <!--img src="imgur.link.png" alt="Magic of Dynamic Programming" title="Magic of Dynamic Programming" /-->
 </h1>
 <p align="center">  
- <a href="https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/dev?urlpath=lab"><img src="https://mybinder.org/badge_logo.svg"></a>
+<a href="https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master"><img src="https://mybinder.org/badge_logo.svg"></a>
 <img src="https://www.repostatus.org/badges/latest/wip.svg"></a>
 <img src="https://img.shields.io/badge/last%20updated-July%202020-blue">
 </p>
@@ -105,7 +105,7 @@ See the following sections for 3 easy ways to enter the classroom. You can use t
 
 Just click on this link and a fully interactive classroom session will launch in your browser _without any setup_ or installation!
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?filepath=notebooks)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master)
 
 The session might take some time to open, or it might not build on your first try. Wait patiently and/or try again.
 
