@@ -129,6 +129,9 @@ Setting up your environment is not difficult and allows you to interact with the
 <h5 id="setup">Step 2: Running the notebooks</h5>
 
 - [ ] TODO
+    
+Run all cells to see all the notebook contents such as videos and quizzes.
+![SegmentLocal](images/run_all.gif "segment")
 
 <h4 id="browse"><strong>Option 3: </strong>Just browse</h4>
  
