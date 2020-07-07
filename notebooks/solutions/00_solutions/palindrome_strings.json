@@ -1,0 +1,31 @@
+{
+    "type": "multi-answer",
+    "question": "Which of the following strings are palindromes?",
+    "options": [
+        {
+            "id": "1",
+            "answer": "palindrome",
+            "correct": false
+        },
+        {
+            "id": "2",
+            "answer": "",
+            "correct": true
+        },
+        {
+            "id": "3",
+            "answer": "aviva",
+            "correct": true
+        },
+        {
+            "id": "4",
+            "answer": "02.02.2020",
+            "correct": false
+        },
+        {
+            "id": "5",
+            "answer": "live on time emit no evil",
+            "correct": true
+        }
+    ]
+}
