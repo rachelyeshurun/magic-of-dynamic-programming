@@ -1,0 +1,31 @@
+{
+    "type": "multi-answer",
+    "question": "Which terms describe the algorithm above?",
+    "options": [
+        {
+            "id": "1",
+            "answer": "top-down",
+            "correct": false
+        },
+        {
+            "id": "2",
+            "answer": "bottom-up",
+            "correct": true
+        },
+        {
+            "id": "3",
+            "answer": "iterative",
+            "correct": true
+        },
+        {
+            "id": "4",
+            "answer": "inductive",
+            "correct": false
+        },
+        {
+            "id": "5",
+            "answer": "recursive",
+            "correct": false
+        }
+    ]
+}
