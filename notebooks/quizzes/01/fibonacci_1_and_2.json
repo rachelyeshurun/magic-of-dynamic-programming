@@ -1,0 +1,32 @@
+{
+    "type": "multi-answer",
+    "question": "How many calls to $fib(2)$ and to $fib(1)$ does $fib(8)$ make?",
+    "options": [
+        {
+            "id": "1",
+            "answer": "$fib(2)$ is called $5$ times and $fib(1)$ is called $8$ times",
+            "correct": false
+        },
+        {
+            "id": "2",
+            "answer": "$fib(2)$ is called $8$ times and $fib(1)$ is called $13$ times",
+            "correct": false
+        },
+        {
+            "id": "3",
+            "answer": "$fib(2)$ is called $8$ times and $fib(1)$ is called $5$ times",
+            "correct": false
+        },
+        {
+            "id": "4",
+            "answer": "$fib(2)$ is called $13$ times and $fib(1)$ is called $5$ times",
+            "correct": false
+        },
+        {
+            "id": "5",
+            "answer": "$fib(2)$ is called $13$ times and $fib(1)$ is called $8$ times",
+            "correct": true
+        }
+
+    ]
+}
