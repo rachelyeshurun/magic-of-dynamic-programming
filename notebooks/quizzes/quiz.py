@@ -1,7 +1,7 @@
 import ipywidgets as widgets
 
-from IPython.display import display
-from ipywidgets import Button, Layout, Label, AppLayout
+from IPython.display import display, HTML
+from ipywidgets import Button, Layout, Label, AppLayout, Checkbox, HBox
 
 import json
 import sys
@@ -10,14 +10,22 @@ import random
 
 def create_multi_answer_widget(question, options):
 
+    # Need to make my own checkbox out of checkbox + label because LaTeX not displaying nicely in checkbox built in description label
     question_widget = Label(value=question)
-    options_dict = {option['id']: widgets.Checkbox(description=option['answer'], value=False, layout=Layout(width='1000px'), style={'description_width': 'initial'}) for option in options}
-    checkboxes = list(options_dict.values())
+    #options_dict = {option['id']: widgets.Checkbox(description=option['answer'], value=False, style={'description_width': 'initial'}) for option in options}
+
+    #cb_list = [Checkbox(value=False, style={'description_width': 'initial'}) for option in options]
+    labels = [Label(value = option['answer'], layout=Layout(width='1000px')) for option in options]
+    #checkbox_tuples = list(zip(cb_list, cb_label_list))
+
+    checkboxes = [HBox((Checkbox(value=False, style={'description_width': 'initial'}, layout=Layout(width='30px')), lbl)) for lbl in labels]
+    #checkboxes = list(options_dict.values())
 
     # for each option, create a feedback box on the left and a checkbox on the right
     vertical = []
     for cb in checkboxes:
         new_hbox = widgets.HBox([Label(value=''), cb])
+        #new_hbox.box_style = 'info'
         vertical.append(new_hbox)
 
     # vertically laid out options with feedback on the left
@@ -64,14 +72,13 @@ def create_multi_answer_widget(question, options):
             opt = option_widget.children[i]
 
             lbl = opt.children[0]
-            cb = opt.children[1]
+            cb = opt.children[1].children[0]
 
             actual_answer = cb.value
             expected_answer = options[i]['correct']
 
             # clear feedback before giving new feedback
             opt.layout = Layout(border=None)
-            cb.disabled = True
             lbl.value = ''
             lbl.layout=Layout(width='100px')
 
@@ -101,16 +108,24 @@ def create_multi_answer_widget(question, options):
             option_widget.box_style = 'success'
             score_widget.box_style = 'success'
             multi_answer.box_style = 'success'
+            # disable checkboxes and submit
             submit_button.disabled = True
+            for i in range(num_options):
+                opt = option_widget.children[i]
+                cb = opt.children[1].children[0]
+                cb.disabled = True
+                
             submit_button.style.button_color = 'lightgreen'
             cb.disabled = True
 
             if submit_button.description == 'Submit':
                 text = random.choice(['Perfect!', 'Your\'re on a roll!', 'Keep up the good work!', 'All correct!', 'Correct!',
                                   'Success!', '100% !!', 'Perfect ;-) ', 'Excellent!', 'You got it!', 'You\'re the best',
-                                             'You got an A+', 'Nice job, rock star!', 'Hurray for you!', 'Great work!'])
+                                             'You got an A+', 'Nice job, rock star!', 'Hurray for you!', 'Great work!',
+                                      'Nice, you got it on your first try!', 'Nice one!', 'One hundred percent!'])
             else:
-                text = 'Very good'
+                text = 'Now you got it!'
+
         else:
             option_widget.box_style = 'danger'
             score_widget.box_style = 'danger'
@@ -118,17 +133,13 @@ def create_multi_answer_widget(question, options):
             submit_button.style.button_color = 'pink'
 
             submit_button.description = 'Submit again'
-            for i in range(num_options):
-                opt = option_widget.children[i]
-                cb = opt.children[1]
-                cb.disabled = False
             # clear rectangles
             if missing > 0:
                 text = 'you missed some correct options, try again!'
             else:
                 text = 'try again!'
 
-        score_label.value = '~ ~ ~ ~ ~' + text + '~ ~ ~ ~ ~'
+        score_label.value = '. . . . . . . ' + text
 
     submit_button.on_click(check_answers)
 
