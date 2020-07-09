@@ -91,7 +91,7 @@ The notebooks are best viewed in order, as each one builds atop the previous one
 
 See the following sections for 3 easy ways to enter the classroom. You can use the table below to decide which method to use.
 
-| Advantage | [Method 1: Use Binder](#binder) | [Method 2: Your own setup](#setup) | [Method 3: Just browse  this repo](#browse) |
+| Advantage | [Option 1: Use Binder](#binder) | [Option 2: Your own setup](#setup) | [Option 3: Just browse  this repo](#browse) |
 | --------- | -----------------| -------------------------| ----------------------|
 | **No installation required** | :heavy_check_mark: | :x:   |:heavy_check_mark:|
 | **View course materials**  | :heavy_check_mark: | :heavy_check_mark:   | :heavy_check_mark:|
@@ -103,11 +103,9 @@ See the following sections for 3 easy ways to enter the classroom. You can use t
 
 <h4 id="binder"><strong>Option 1: </strong>Use Binder</h4>
 
-Just click on this link and a fully interactive classroom session will launch in your browser _without any setup_ or installation!
+If you choose this option, navigage to each notebook from the table of contents above. When you click on a notebook link, a fully interactive classroom session will launch in your browser _without any setup_ or installation!
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master)
-
-The session might take some time to open, or it might not build on your first try. Wait patiently and/or try again.
+Note: The session might take some time to open, or it might not build on your first try.
 
 <h4 id="setup"><strong>Option 2: </strong>Set up your own environment</h4>
 
@@ -128,10 +126,14 @@ Setting up your environment is not difficult and allows you to interact with the
 
 <h5 id="setup">Step 2: Running the notebooks</h5>
 
-- [ ] TODO
+When the notebooks load, most elements such as videos, text and diagrams will be visible.
+The interactive quizzes don't always show up, you'll have to run the notebook to view them.
     
-Run all cells to see all the notebook contents such as videos and quizzes.
+See this gif for how to run the whole notebook at once
 ![SegmentLocal](images/run_all.gif "segment")
+
+If running the whole notebook doesn't show the quizzes, you can run cells individually as in the following gif.
+![SegmentLocal](images/run_one.gif "segment")
 
 <h4 id="browse"><strong>Option 3: </strong>Just browse</h4>
  
