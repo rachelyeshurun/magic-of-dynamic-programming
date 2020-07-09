@@ -1,0 +1,32 @@
+{
+    "type": "multi-answer",
+    "question": "How many inner nodes does the call tree of fib(n) have?",
+    "options": [
+        {
+            "id": "1",
+            "answer": "fib(n)",
+            "correct": false
+        },
+        {
+            "id": "2",
+            "answer": "fib(n - 1)",
+            "correct": false
+        },
+        {
+            "id": "3",
+            "answer": "fib(n) - 1",
+            "correct": true
+        },
+        {
+            "id": "3",
+            "answer": "fib(n - 1) + fib(n - 2)",
+            "correct": false
+        },
+        {
+            "id": "3",
+            "answer": "fib(n) - 1 + fib(n - 2)",
+            "correct": false
+        }
+        
+    ]
+}

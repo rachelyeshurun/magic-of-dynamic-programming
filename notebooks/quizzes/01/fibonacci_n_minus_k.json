@@ -1,20 +1,25 @@
 {
     "type": "multi-answer",
-    "question": "How many nodes of type $fib(n - k)$ does the call stack tree of $fib(n)$ have, where k is between 0 and n-1?",
+    "question": "Given k between 0 and n - 3, how many nodes of type fib(n - k) does the call stack tree of fib(n) have?",
     "options": [
         {
             "id": "1",
-            "answer": "$fib(k)$",
+            "answer": "fib(k)",
             "correct": true
         },
         {
             "id": "2",
-            "answer": "$fib(n)$",
+            "answer": "fib(n - k)",
             "correct": false
         },
         {
             "id": "3",
-            "answer": "$fib(n - k)$",
+            "answer": "fib(k - 1)",
+            "correct": false
+        },
+        {
+            "id": "3",
+            "answer": "fib(k) - 1",
             "correct": false
         }
     ]
