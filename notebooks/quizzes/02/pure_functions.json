@@ -1,0 +1,46 @@
+{
+    "type": "multi-answer",
+    "question": "Which functions below are likely to be pure?",
+    "options": [
+        {
+            "id": "1",
+            "answer": "output of the function depends on a global value",
+            "correct": false
+        },
+        {
+            "id": "2",
+            "answer": "output of a function depends only on the time of day",
+            "correct": false
+        },
+        {
+            "id": "3",
+            "answer": "function writes 'True' to a database then returns the exact same input",
+            "correct": false
+        },
+        {
+            "id": "4",
+            "answer": "function reads input from database then always returns True",
+            "correct": false
+        },
+        {
+            "id": "5",
+            "answer": "output of the function depends on a configuration parameter that can be changed at run-time.",
+            "correct": false
+        },
+        {
+            "id": "6",
+            "answer": "output of the function depends on running the input through a complex calculation",
+            "correct": true
+        },
+        {
+            "id": "7",
+            "answer": "input is always an integer, output of the function is that number plus a pseudorandom number",
+            "correct": false
+        },
+         {
+            "id": "8",
+            "answer": "input of the function is a pseudorandom number, output is that number squared",
+            "correct": true
+        }
+    ]
+}

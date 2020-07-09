@@ -1,0 +1,37 @@
+{
+    "type": "multi-answer",
+    "question": "Which of the following statements are true concerning programs A and B above?",
+    "options": [
+        {
+            "id": "2",
+            "answer": "foo is deterministic",
+            "correct": true
+        },
+        {
+            "id": "2",
+            "answer": "foo is referentially transparent",
+            "correct": false
+        },
+        {
+            "id": "2",
+            "answer": "bar is deterministic",
+            "correct": false
+        },
+        {
+            "id": "2",
+            "answer": "bar is referentially transparent",
+            "correct": false
+        },
+        {
+            "id": "1",
+            "answer": "foo is a pure function",
+            "correct": false
+        },
+        {
+            "id": "1",
+            "answer": "bar is a pure function",
+            "correct": false
+        }
+        
+    ]
+}

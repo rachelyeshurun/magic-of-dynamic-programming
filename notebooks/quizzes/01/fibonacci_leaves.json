@@ -1,30 +1,10 @@
 {
-    "type": "multi-answer",
-    "question": "How many leaves does the call stack tree for $fib(n)$ have? ",
+    "type": "blanks",
+    "question": "How many leaves does the call stack tree for fib(n) have? ",
     "options": [
         {
-            "id": "1",
-            "answer": "$2^n$",
-            "correct": false
-        },
-        {
-            "id": "2",
-            "answer": "$2^{fib(n)}$",
-            "correct": false
-        },
-        {
             "id": "3",
-            "answer": "$fib(n)$",
-            "correct": true
-        },
-        {
-            "id": "4",
-            "answer": "$n {fib(n)}$",
-            "correct": false
-        },
-        {
-            "id": "5",
-            "answer": "$fib (n - 1) + fib (n - 2)$",
+            "answer": "fib(n)",
             "correct": true
         }
     ]
