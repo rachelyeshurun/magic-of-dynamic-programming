@@ -33,19 +33,19 @@
 
 * **Lesson 0: Review**
   * Video - [Recursion: sum of n numbers](https://youtu.be/roqumrTB9g0)
-  * Notebook - [Lesson 0](./notebooks/00_introduction.ipynb)
+  * Notebook - [Lesson 0](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?filepath=notebooks%2F00_introduction.ipynb)
   
 * **Lesson 1: Fibonacci Numbers**
   * Video - [Fibonacci top down]
-  * Notebook - [Lesson 1](./notebooks/01_fibonacci.ipynb)
+  * Notebook - [Lesson 1](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?filepath=notebooks%2F01_fibonacci.ipynb)
   
 * **Lesson 2: Memoization**
   * Video - [Fibonacci memoized]
-  * Notebook - [Lesson 2](./notebooks/02_memoization.ipynb)
+  * Notebook - [Lesson 2](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?filepath=notebooks%2F02_memoization.ipynb)
 
 * **Lesson 3: Fibonacci Revisited**
   * Video - [Fibonacci bottom up]
-  * Notebook - [Lesson 3]
+  * Notebook - [Lesson 3](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?filepath=notebooks%2F03_fibonacci_revisited.ipynb)
 
 * **Lesson 4: The Drinking Game**
   * Video - [The Drinking Game: Introducing the 4 steps]
