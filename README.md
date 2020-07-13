@@ -8,8 +8,11 @@
 <img src="https://img.shields.io/badge/last%20updated-July%202020-blue">
 </p>
 
-<a href="https://www.freecodecamp.org/news/how-open-source-licenses-work-and-how-to-add-them-to-your-projects-34310c3cf94/">LICENSE TODO
+<p>
+<a href="https://www.freecodecamp.org/news/how-open-source-licenses-work-and-how-to-add-them-to-your-projects-34310c3cf94/">
+LICENSE TODO
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License%20-Apache%20License%202.0-orange"></a>
+</p>
 
 <p align="center">
   Does dynamic progrmming seem like dark magic to you?<br>
@@ -35,21 +38,16 @@
   * Video - [Recursion: sum of n numbers](https://youtu.be/roqumrTB9g0)
   * Notebook - [Lesson 0](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?filepath=notebooks%2F00_introduction.ipynb)
   
-* **Lesson 1: Fibonacci Numbers**
-  * Video - [Fibonacci top down]
-  * Notebook - [Lesson 1](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?filepath=notebooks%2F01_fibonacci.ipynb)
+* **Lesson 1: Memoization**
+  * Notebook - [Lesson 1](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?filepath=notebooks%2F01_memoization.ipynb)
   
-* **Lesson 2: Memoization**
-  * Video - [Fibonacci memoized]
-  * Notebook - [Lesson 2](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?filepath=notebooks%2F02_memoization.ipynb)
+* **Lesson 2: Fibonacci Numbers**
+  * Video - [Find the n'th Fibonacci number]
+  * Notebook - [Lesson 2](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?filepath=notebooks%2F02_fibonacci.ipynb)
 
-* **Lesson 3: Fibonacci Revisited**
-  * Video - [Fibonacci bottom up]
-  * Notebook - [Lesson 3](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?filepath=notebooks%2F03_fibonacci_revisited.ipynb)
-
-* **Lesson 4: The Drinking Game**
+* **Lesson 3: The Drinking Game**
   * Video - [The Drinking Game: Introducing the 4 steps]
-  * Notebook - [Lesson 4]
+  * Notebook - [Lesson 3](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?filepath=notebooks%2F03_drinking_game.ipynb)
 
 * **Lesson 5: Paths in a Grid**
   * Video - [Paths in a Grid: More practice in the 4 steps]

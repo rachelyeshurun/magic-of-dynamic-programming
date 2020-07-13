@@ -1,11 +1,13 @@
 {
     "type": "blanks",
-    "question": "How many leaves does the call stack tree for fib(n) have? ",
-    "options": [
+    "question": "Fill in the blank with regard to our implementation of fib(n)",
+    "sections": [
         {
-            "id": "3",
+            "id": "1",
+            "prefix": "The call tree for fib(n) has exactly",
             "answer": "fib(n)",
-            "correct": true
+            "suffix": "leaves.",
+            "hint": "Your answer will be in terms of n"
         }
     ]
 }
