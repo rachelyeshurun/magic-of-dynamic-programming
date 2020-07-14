@@ -34,40 +34,32 @@ LICENSE TODO
         * [Lesson Plans & Pedagogy](#pedagogy)
         * [Other great notebooks](#inspiration)
 
-* **Lesson 0: Review**
-  * Video - [Recursion: sum of n numbers](https://youtu.be/roqumrTB9g0)
-  * Notebook - [Lesson 0](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?filepath=notebooks%2F00_introduction.ipynb)
+* **Lesson 0: Review Recursion**
+  * Click here to access notebook: [Introduction](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?filepath=notebooks%2F00_introduction.ipynb)
   
 * **Lesson 1: Memoization**
-  * Notebook - [Lesson 1](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?filepath=notebooks%2F01_memoization.ipynb)
+  * Click here to access notebook: [Factorial](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?filepath=notebooks%2F01_memoization.ipynb)
   
-* **Lesson 2: Fibonacci Numbers**
-  * Video - [Find the n'th Fibonacci number]
-  * Notebook - [Lesson 2](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?filepath=notebooks%2F02_fibonacci.ipynb)
+* **Lesson 2: Fibonacci Revisited**
+  * Click here to access notebook:  [Find the n'th Fibonacci number](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?filepath=notebooks%2F02_fibonacci.ipynb)
 
-* **Lesson 3: The Drinking Game**
-  * Video - [The Drinking Game: Introducing the 4 steps]
-  * Notebook - [Lesson 3](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?filepath=notebooks%2F03_drinking_game.ipynb)
+* **Lesson 3: Introducing the 4 Steps**
+  * Click here to access notebook:  [The Drinking Game: Introducing the 4 steps](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?filepath=notebooks%2F03_drinking_game.ipynb)
 
-* **Lesson 5: Paths in a Grid**
-  * Video - [Paths in a Grid: More practice in the 4 steps]
-  * Notebook - [Lesson 5]
+* **Lesson 4: Practice the 4 Steps**
+  * Binder link to notebook:  [Paths in a Grid]
   
-* **Lesson 6: Happiness & Pinecones**
-  * Video - [Happiness & Pinecones: Longest common sub-string]
-  * Notebook - [Lesson 6]
+* **Lesson 5: Happiness & Pinecones**
+  * Binder link to notebook:  [Happiness & Pinecones: Longest Common Substring]
   
-* **Lesson 7: Flower Picking**
-  * Video - [Flower Picking: Longest increasing sub-sequence]
-  * Notebook - [Lesson 7]
+* **Lesson 6: Flower Picking**
+  * Binder link to notebook:  [Flower Picking: Longest Increasing Subsequence]
   
-* **Lesson 8: Knapsack**
-  * Video - [Knapsack: Problems in pseudo-polynomial time]
-  * Notebook - [Lesson 8]
+* **Lesson 7: Knapsack**
+  * Binder link to notebook:  [Knapsack: Problems in pseudo-polynomial time]
 
-* **Lesson 9: They're all DAGs**
-  * Video - []
-  * Notebook - [Lesson 9]
+* **Lesson 8: Convert any DP Problem to a Directed Acyclical Graph**
+  * Binder link to notebook:  [They're all DAGs]
   
 <h2 id="introduction">Introduction</h2>
 
