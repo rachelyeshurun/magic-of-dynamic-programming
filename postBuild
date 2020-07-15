@@ -17,5 +17,5 @@ jupyter nbextension enable toc2/main
 
 # extensions for lab
 jupyter nbextension enable --py widgetsnbextension
-jupyter labextension install @jupyter-widgets/jupyterlab-manager@0.38
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
 jupyter labextension install @osscar-org/jupyterlab-hide-code
