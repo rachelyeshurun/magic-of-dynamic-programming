@@ -1,10 +1,13 @@
 import ipywidgets as widgets
 
-from IPython.display import display, HTML
+from IPython.display import display
 from ipywidgets import Button, Layout, Label, AppLayout, Checkbox, HBox, VBox, Text
+from IPython.core.display import HTML
+
+
 
 import json
-import sys
+import sys, os
 import random
 
 def create_question_widget(question):
@@ -42,7 +45,8 @@ def generate_feedback(quiz_widget, score_widget, style = 'info', feedback_text =
     score_label.value = ''
     show_btn.disabled = True
 
-    style_colour = {'success':'lightgreen', 'danger':'pink', 'info':'lightblue', }
+    # There must be a much better way to do this - future self who knows css, please fix
+    style_colour = {'success':'#81C784', 'danger':'#e57373', 'info':'#4DD0E1' }
     submit_btn.style.button_color = style_colour[style]
     show_btn.style.button_color = style_colour[style]
 
@@ -85,7 +89,7 @@ def create_multi_answer_widget(question, options):
 
     # vertically laid out options with feedback on the left
     option_widget = widgets.VBox(vertical)
-    score_widget = create_score_widget('lightblue')
+    score_widget = create_score_widget('#4DD0E1')
     multi_answer = AppLayout(header=question_widget,
               left_sidebar=option_widget,
               center=None,
@@ -125,13 +129,13 @@ def create_multi_answer_widget(question, options):
             # red border + 'incorrect' for incorrectly checked
             # green border + 'correct!' for correctly checked
             if (expected_answer and actual_answer):
-                opt.layout = Layout(border='2px solid green')
+                opt.layout = Layout(border='1px solid #81C784')
                 lbl.value = 'Correct!'
             if (expected_answer and not actual_answer):
                 missing += 1
             if (not expected_answer and actual_answer):
                 lbl.value = 'Incorrect'
-                opt.layout = Layout(border='2px solid red')
+                opt.layout = Layout(border='1px solid #e57373')
                 incorrect += 1
 
         # update the score label
@@ -184,7 +188,8 @@ def create_fill_in_the_blanks_widget(question, sections):
         # new_hbox.box_style = 'info'
         paragraph.children += (new_hbox,)
 
-    score_widget = create_score_widget('lightblue')
+    # please G-d of programmers forgive me for I don't yet know how to get that colour from css.
+    score_widget = create_score_widget('#4DD0E1')
     fill_in = AppLayout(header=question_widget,
                              left_sidebar=paragraph,
                              center=None,
@@ -193,8 +198,7 @@ def create_fill_in_the_blanks_widget(question, sections):
     fill_in = VBox([question_widget, paragraph, score_widget], layout=Layout(display='flex', flex_flow='column', align_items='stretch', width='100%'))
 
     fill_in.box_style = 'info'
-
-
+    
     # compare checkbox value with original
     def check_answers(b):
         # run through each option, compare expected answer (checked/unchecked) with actual student answer
@@ -221,9 +225,9 @@ def create_fill_in_the_blanks_widget(question, sections):
             if (actual_answer == ''):
                 missing += 1
             elif (expected_answer == actual_answer):
-                blank.layout = Layout(border='2px solid green', width='auto', height='32px')
+                blank.layout = Layout(border='1px solid #81C784', width='auto', height='31px')
             else:
-                blank.layout = Layout(border='2px solid red', width='auto', height='32px')
+                blank.layout = Layout(border='1px solid #e57373', width='auto', height='31px')
                 incorrect += 1
 
         # update the score label
@@ -277,6 +281,7 @@ def create_fill_in_the_blanks_widget(question, sections):
     return (fill_in)
 
 def main(argv):
+     
     json_file = sys.argv[1]
     with open(json_file) as f:
         quiz_dict = json.load(f)

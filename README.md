@@ -3,15 +3,13 @@
    <!--img src="imgur.link.png" alt="Magic of Dynamic Programming" title="Magic of Dynamic Programming" /-->
 </h1>
 <p align="center">  
-<a href="https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master"><img src="https://mybinder.org/badge_logo.svg"></a>
+<a href="https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?urlpath=lab%2Ftree%2Fnotebooks"><img src="https://mybinder.org/badge_logo.svg"></a>
 <img src="https://www.repostatus.org/badges/latest/wip.svg"></a>
 <img src="https://img.shields.io/badge/last%20updated-July%202020-blue">
 </p>
 
 <p>
 <a href="https://www.freecodecamp.org/news/how-open-source-licenses-work-and-how-to-add-them-to-your-projects-34310c3cf94/">
-LICENSE TODO
-<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License%20-Apache%20License%202.0-orange"></a>
 </p>
 
 <p align="center">
@@ -24,54 +22,94 @@ LICENSE TODO
 
 ## Table of Contents
 
-* **Course Overview**
+### Course Overview
+
+
   * [Introduction](#introduction)
-    * [Who should take this course?](#audience)
-    * [How to use this repository?](#usage)
+    * [Who is this course for?](#audience)
+    * [How to view this course](#usage)
   * [Behind the Scenes](#behind)
     * Video - [The Making of 'Magic](https://youtu.be/bh4HpT7Da2s)
     * [Credit](#credit)
         * [Lesson Plans & Pedagogy](#pedagogy)
         * [Other great notebooks](#inspiration)
 
-* **Lesson 0: Review Recursion**
-  * Click here to access notebook: [Introduction](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?filepath=notebooks%2F00_introduction.ipynb)
-  
-* **Lesson 1: Memoization**
-  * Click here to access notebook: [Factorial](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?filepath=notebooks%2F01_memoization.ipynb)
-  
-* **Lesson 2: Fibonacci Revisited**
-  * Click here to access notebook:  [Find the n'th Fibonacci number](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?filepath=notebooks%2F02_fibonacci.ipynb)
 
-* **Lesson 3: Introducing the 4 Steps**
-  * Click here to access notebook:  [The Drinking Game: Introducing the 4 steps](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?filepath=notebooks%2F03_drinking_game.ipynb)
+  * [The Lessons](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?urlpath=lab%2Ftree%2Fnotebooks)
 
-* **Lesson 4: Practice the 4 Steps**
-  * Binder link to notebook:  [Paths in a Grid]
-  
-* **Lesson 5: Happiness & Pinecones**
-  * Binder link to notebook:  [Happiness & Pinecones: Longest Common Substring]
-  
-* **Lesson 6: Flower Picking**
-  * Binder link to notebook:  [Flower Picking: Longest Increasing Subsequence]
-  
-* **Lesson 7: Knapsack**
-  * Binder link to notebook:  [Knapsack: Problems in pseudo-polynomial time]
 
-* **Lesson 8: Convert any DP Problem to a Directed Acyclical Graph**
-  * Binder link to notebook:  [They're all DAGs]
+    When you click on the Launch Binder badge the lessons will be launched on a JupyterHub server. A tabbed 'binder' of notebooks will open in your browser without any installation.  
+    
+   [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?urlpath=lab%2Ftree%2Fnotebooks) 
+    
+    Clicking on a lesson name below will launch Binder with that lesson open and ready.
+    
+
+   * [Lesson 0: Introduction](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?urlpath=lab%2Ftree%2Fnotebooks%2F00_introduction.ipynb)
   
+    * By the end of this lesson, you will have reviewed recursive algorithms and along the way you'll learn how to use these notebooks and their interactive elements.
+    * The worked problem in this lesson is 'Find the sum of n numbers'.
+    
+  
+   * [Lesson 1: Memoization](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?urlpath=lab%2Ftree%2Fnotebooks%2F01_memoization.ipynb)
+  
+    * By the end of this lesson, you will know when and how to memoize a function.
+    * The worked problem in this lesson is 'Factorial'.
+    
+  
+   * [Lesson 2: Fibonacci Revisited](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?urlpath=lab%2Ftree%2Fnotebooks%2F02_fibonacci.ipynb)
+  
+    * By the end of this lesson, you will know how to memoize a recursive algorithm and you will see the magical effect memoization has on the naive Fibonacci algorithm.
+    * The worked problem for this lesson is 'Find the n'th Fibonacci number'
+    
+
+   * [Lesson 3: The Drinking Game](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?urlpath=lab%2Ftree%2Fnotebooks%2F03_drinking_game.ipynb)
+    
+    * By the end of this lesson, you will know the right way to make a start on any dynamic programming problem.
+    * You will learn the 4 steps to solving any dynamic programming problem.
+    * The worked problem for this lesson is 'The Drinking Game'.
+    
+
+   * [Lesson 4: Paths in a Grid]
+    
+    * By the end of this lesson, you will have practiced the 4 steps on a 2 dimensional problem.
+    * The worked problem for this lesson is 'Paths in a Grid'.
+    
+    
+   * [Lesson 5: Happiness and Pinecones]
+    
+    * By the end of this lesson, you will know how to solve the 'longest common substring' problem.
+    * You will learn that there are 4 common subproblem types and how to recognize them.
+    * The worked problem for this lesson is 'Happiness and Pinecones'.
+    
+   * [Lesson 6: Flower Picking]
+    
+    * By the end of this lesson, you will know how to solve the 'longest increasing subsequence' problem.
+    * The worked problem for this lesson is 'Flower Picking'.
+    
+
+   * [Lesson 7: Knapsack]
+    
+    * By the end of this lesson, you will encounter a class of dynamic programming problems that run in pseudo-polynomial time
+    * The worked problem for this lesson is 'Knapsack'.
+    
+    
+   * [Lesson 8: DAGs]
+    
+    * By the end of this lesson, you will understand how all dynamic programming problems can be represented by directed acyclical graphs.
+      
+
 <h2 id="introduction">Introduction</h2>
 
 Dynamic programming has the reputation for being tricky to master. 
 
 - [ ] TODO
 
-<h3 id="audience">Who is this repository for?</h3>
+<h3 id="audience">Who is this course for?</h3>
 
 - [ ] TODO
 
-<h3 id="usage">How to use this repository?</h2>
+<h3 id="usage">How to run and view this course</h2>
 
 This course is designed to be taken over a few hours, for example, as a weekend project.
 

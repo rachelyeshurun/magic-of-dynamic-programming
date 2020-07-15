@@ -1,0 +1,32 @@
+{
+    "type": "multi-answer",
+    "question": "As a first step, how would you rephrase the problem?",
+    "options": [
+        {
+            "id": "1",
+            "answer": "Find all the combinations of bottles that yield a maximum volume.",
+            "correct": false
+        },
+        {
+            "id": "2",
+            "answer": "Find a combination of bottles that yields a maximum volume.",
+            "correct": false
+        },
+        {
+            "id": "3",
+            "answer": "Find a combinations of bottles that follows the rule.",
+            "correct": false
+        },
+        {
+            "id": "3",
+            "answer": "Find all combinations of bottles that follow the rule.",
+            "correct": true
+        },
+        {
+            "id": "3",
+            "answer": "Find a combination of bottles that follows the rule and yields maximum volume.",
+            "correct": false
+        }
+
+    ]
+}
