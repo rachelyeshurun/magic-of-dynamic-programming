@@ -7,14 +7,15 @@ jupyter trust notebooks/*.ipynb
 jupyter contrib nbextension install --user
 
 # extensions for notebook
-jupyter nbextension enable rubberband/main
-jupyter nbextension enable exercise2/main
-jupyter nbextension enable latex_envs/latex_envs
-jupyter nbextension enable hide_input/main
-jupyter nbextension enable toc2/main
+#jupyter nbextension enable rubberband/main
+#jupyter nbextension enable exercise2/main
+#jupyter nbextension enable latex_envs/latex_envs
+#jupyter nbextension enable hide_input/main
+#jupyter nbextension enable toc2/main
 
 
 
 # extensions for lab
 jupyter nbextension enable --py widgetsnbextension
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
+jupyter labextension install @jupyterlab/jupyterlab-toc

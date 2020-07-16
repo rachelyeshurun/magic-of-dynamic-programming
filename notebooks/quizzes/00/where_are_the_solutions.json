@@ -1,0 +1,42 @@
+{
+    "type": "multi-answer",
+    "question": "Check all the correct statements about coding exercises and solutions",
+    "options": [
+        {
+            "id": "1",
+            "answer": "Solutions are located at the end of each notebook.",
+            "correct": true
+        },
+        {
+            "id": "2",
+            "answer": "Solutions are hidden in an accordion style. ",
+            "correct": true
+        },
+        {
+            "id": "3",
+            "answer": "Solutions are styled in a yellow warning colour, so don't peek!",
+            "correct": true
+        },
+        {
+            "id": "4",
+            "answer": "Solutions can be run directly from the cell once the accordion is opened.",
+            "correct": false
+        },
+        {
+            "id": "5",
+            "answer": "If you don't see starter code for an exercise, probably the code cell is collapsed by mistake.",
+            "correct": true
+        },
+        {
+            "id": "6",
+            "answer": "You can quickly collapse a code cell by clicking the selection bar to its left.",
+            "correct": true
+        },
+        {
+        "id": "7",
+            "answer": "Once a code cell is collapsed, there is no way to ever see it again!",
+            "correct": false
+        }
+        
+    ]
+}
