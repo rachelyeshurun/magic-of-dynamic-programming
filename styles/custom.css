@@ -92,4 +92,60 @@
     .alert-danger .alert-link {
       color: #c62828;
     }
+    
+
+    .exercise {
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+    }
+
+    .exercise h4 {
+      margin-top: 0;
+      color: inherit;
+    }
+
+    .exercise .alert-link {
+      font-weight: bold;
+    }
+
+    .exercise > p,
+    .exercise > ul {
+      margin-bottom: 0;
+    }
+
+    .exercise > p + p {
+      margin-top: 5px;
+    }
+
+    .exercise-info {
+      background-color: #B2EBF2;
+      border-color: #4DD0E1;
+      color: #000000;
+    }
+
+    .exercise-info hr {
+      border-top-color: #00838F;
+    }
+
+    .exercise-info .alert-link {
+      color: #245269;
+    }
+
+   .exercise-warning {
+      background-color: #FFE0B2;
+      border-color: #FFB74D;
+      color: #000000;
+    }
+
+    .exercise-warning hr {
+      border-top-color: #FFB74D;
+    }
+
+    .excercise-warning .alert-link {
+      color: #EF6C00;
+    }
+
+
 </style>
