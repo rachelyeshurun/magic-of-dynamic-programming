@@ -1,6 +1,6 @@
 {
     "type": "multi-answer",
-    "question": "As a first step, how would you rephrase the problem?",
+    "question": "As a first step, how would you rephrase the drinking game problem?",
     "options": [
         {
             "id": "1",
@@ -9,22 +9,22 @@
         },
         {
             "id": "2",
-            "answer": "Find a combination of bottles that yields a maximum volume.",
+            "answer": "Find all the combinations of bottles that yield a minimum volume.",
             "correct": false
         },
         {
             "id": "3",
-            "answer": "Find a combinations of bottles that follows the rule.",
+            "answer": "Find all combinations of bottles that are adjacent",
             "correct": false
         },
         {
             "id": "3",
-            "answer": "Find all combinations of bottles that follow the rule.",
+            "answer": "Find all combinations of bottles that are not adjacent",
             "correct": true
         },
         {
             "id": "3",
-            "answer": "Find a combination of bottles that follows the rule and yields maximum volume.",
+            "answer": "Find a combination of bottles that are not adjacent and yield maximum volume",
             "correct": false
         }
 
