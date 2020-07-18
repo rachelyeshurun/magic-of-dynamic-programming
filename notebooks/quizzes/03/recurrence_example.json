@@ -1,0 +1,20 @@
+{
+    "type": "blanks",
+    "question": "In our example of the drinking game with 8 bottles ...",
+    "sections": [
+        {
+            "id": "1",
+            "prefix": "If you choose the 8th bottle, the rest of the solution will come from the first",
+            "answer": "6",
+            "suffix": "bottles.",
+            "hint": ""
+        },
+        {
+            "id": "1",
+            "prefix": "If however, you do NOT choose the 8 bottle, the rest of the solution will come from the first",
+            "answer": "7",
+            "suffix": "bottles.",
+            "hint": ""
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "type": "multi-answer",
+    "question": "Which statement about the recurrence relation is true of the drinking game problem?",
+    "options": [
+        {
+            "id": "1",
+            "answer": "The recurrence relation is given, nothing to discover.",
+            "correct": false
+        },
+        {
+            "id": "2",
+            "answer": "The recurrence relation can be discovered from a constraint in the problem.",
+            "correct": true
+        },
+        {
+            "id": "3",
+            "answer": "The problem doesn't give any constraint, I'll have to add a constraint in order to discover the recurrence.",
+            "correct": false
+        }
+    ]
+}
