@@ -11,7 +11,17 @@ import sys, os
 import random
 
 def create_question_widget(question):
-    q = HBox([Label(value=question)], layout=Layout(display='flex', flex_flow='row wrap', align_items='stretch', width='100%', margin='0 0 30px 0'))
+    
+    item_layout = Layout(
+        display='flex',
+        flex_flow='row',
+        justify_content='space-between', margin='0 0 20px 0'
+    )
+    
+    # Because row-wrap still not working. See https://stackoverflow.com/questions/58405678/text-wrapping-in-ipywidgets
+    label = widgets.HTML(value= '<style>p{word-wrap: break-word}</style> <p>'+ question +' </p>')
+    
+    q = HBox([label], layout=item_layout)
     return q
 
 def create_score_widget(colour, submit_text = 'Submit', show_text = 'Show answer'):
@@ -22,6 +32,9 @@ def create_score_widget(colour, submit_text = 'Submit', show_text = 'Show answer
     submit_button.style.button_color = colour
     box.children += (submit_button,)
 
+    # This won't wrap, known bug/feature of ipywidget label.
+    # But leaving it for now as feedback is usually really short.   
+    # See https://stackoverflow.com/questions/58405678/text-wrapping-in-ipywidgets for more
     score = Label(value='', layout=Layout(width='50%', height='50%', margin='0 0 0 30px'))
     box.children += (score,)
 
@@ -46,12 +59,14 @@ def generate_feedback(quiz_widget, score_widget, style = 'info', feedback_text =
     show_btn.disabled = True
 
     # There must be a much better way to do this - future self who knows css, please fix
-    style_colour = {'success':'#81C784', 'danger':'#e57373', 'info':'#4DD0E1' }
+    style_colour = {'success':'#81C784', 'danger':'#e57373', 'info':'#4DD0E1', 'warning': '#FFE0B2'}
     submit_btn.style.button_color = style_colour[style]
     show_btn.style.button_color = style_colour[style]
 
     if style == 'success':
         submit_btn.disabled = True
+        submit_btn.layout.visibility = 'hidden'
+        show_btn.layout.visibility = 'hidden'
         if feedback_text == '':
             feedback_text += random.choice(
                 ['Perfect!', 'Your\'re on a roll!', 'Keep up the good work!', 'All correct!', 'Correct!', 'Correct! Looks like you\'re having fun!',
@@ -62,13 +77,17 @@ def generate_feedback(quiz_widget, score_widget, style = 'info', feedback_text =
     elif style == 'danger':
         submit_btn.description = 'Submit again'
         submit_btn.disabled = False
+        submit_btn.layout.visibility = 'visible'
         if feedback_text == '':
             feedback_text += 'Try again!'
         if show_show_answer_btn == True:
             show_btn.layout.display = 'flex'
             show_btn.disabled = False
-    elif style == 'info':
+            show_btn.layout.visibility = 'visible'
+    elif style == 'info' or style == 'warning':
         submit_btn.disabled = True
+        submit_btn.layout.visibility = 'hidden'
+        show_btn.layout.visibility = 'hidden'
 
     score_label.value = feedback_text
 
@@ -77,24 +96,22 @@ def create_multi_answer_widget(question, options):
     question_widget = create_question_widget(question)
 
     # Need to make my own checkbox out of checkbox + label because LaTeX not displaying nicely in checkbox built in description label
-    labels = [Label(value = option['answer'], layout=Layout(width='1000px')) for option in options]
-    checkboxes = [HBox((Checkbox(value=False, style={'description_width': 'initial'}, layout=Layout(width='30px')), lbl)) for lbl in labels]
+    
+    labels = [widgets.HTML(value= '<style>p{word-wrap: break-word}</style> <p>'+ option['answer'] +' </p>') for option in options]
+    checkboxes = [HBox( [Checkbox(value=False, style={'description_width': 'initial'}, layout=Layout(width='30px')), lbl], layout=Layout(display='flex', flex_flow='row wrap', align_items='stretch', width='auto')) for lbl in labels]
 
     # for each option, create a feedback box on the left and a checkbox on the right
     vertical = []
     for cb in checkboxes:
-        new_hbox = widgets.HBox([Label(value=''), cb])
+        new_hbox = widgets.HBox([Label(value=''), cb], layout=Layout(display='flex', flex_flow='row wrap', align_items='stretch', width='auto'))
         #new_hbox.box_style = 'info'
         vertical.append(new_hbox)
 
     # vertically laid out options with feedback on the left
-    option_widget = widgets.VBox(vertical)
+    option_widget = widgets.VBox(vertical, layout=Layout(display='flex', flex_flow='column', align_items='stretch', width='100%'))
     score_widget = create_score_widget('#4DD0E1')
-    multi_answer = AppLayout(header=question_widget,
-              left_sidebar=option_widget,
-              center=None,
-              right_sidebar=None,
-              footer=score_widget)
+
+    multi_answer = VBox([question_widget, option_widget, score_widget], layout=Layout(display='flex', flex_flow='column', align_items='stretch', width='100%'))
 
     multi_answer.box_style = 'info'
 
@@ -106,8 +123,8 @@ def create_multi_answer_widget(question, options):
         incorrect = 0
         missing = 0
 
-        option_widget = multi_answer.children[2]
-        score_widget = multi_answer.children[1]
+        option_widget = multi_answer.children[1]
+        score_widget = multi_answer.children[2]
 
         submit_button = score_widget.children[0]
 
@@ -176,11 +193,14 @@ def create_fill_in_the_blanks_widget(question, sections):
     paragraph = HBox([], layout=Layout(display='flex', flex_flow='row wrap', align_items='stretch', width='auto'))
     for i in range(num_sections):
         section = sections[i]
-        prefix = Label(value = section['prefix'], layout=Layout(width='auto'))
+        # Because row-wrap still not working. See https://stackoverflow.com/questions/58405678/text-wrapping-in-ipywidgets
+        prefix = widgets.HTML(value= '<style>p{word-wrap: break-word}</style> <p>'+ section['prefix'] +' </p>')
+        #prefix = Label(value = section['prefix'], layout=Layout(width='auto'))
         blank = Text(value='', placeholder='', description='',
                              disabled=False, layout=(Layout(width='auto')))
 
-        suffix = Label(value=section['suffix'], layout=Layout(width='auto'))
+        suffix = widgets.HTML(value= '<style>p{word-wrap: break-word}</style> <p>'+ section['suffix'] +' </p>')
+        #suffix = Label(value=section['suffix'], layout=Layout(width='auto'))
 
         new_hbox = widgets.HBox([prefix, blank, suffix],
                                 layout=Layout(display='flex', flex_flow='row wrap', align_items='stretch', width='auto'))
@@ -190,11 +210,11 @@ def create_fill_in_the_blanks_widget(question, sections):
 
     # please G-d of programmers forgive me for I don't yet know how to get that colour from css.
     score_widget = create_score_widget('#4DD0E1')
-    fill_in = AppLayout(header=question_widget,
-                             left_sidebar=paragraph,
-                             center=None,
-                             right_sidebar=None,
-                             footer=score_widget, layout=Layout(display='flex', flex_flow='column', align_items='stretch', width='100%'))
+#    fill_in = AppLayout(header=question_widget,
+#                             left_sidebar=paragraph,
+#                             center=None,
+#                             right_sidebar=None,
+#                             footer=score_widget, layout=Layout(display='flex', flex_flow='column', #align_items='stretch', width='100%'))
     fill_in = VBox([question_widget, paragraph, score_widget], layout=Layout(display='flex', flex_flow='column', align_items='stretch', width='100%'))
 
     fill_in.box_style = 'info'
@@ -271,7 +291,7 @@ def create_fill_in_the_blanks_widget(question, sections):
 
             blank.placeholder = sections[i]['answer']
 
-        generate_feedback(fill_in, score_widget)
+        generate_feedback(fill_in, score_widget, style='warning')
 
     submit_button = score_widget.children[0]
     submit_button.on_click(check_answers)

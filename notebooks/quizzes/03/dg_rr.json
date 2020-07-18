@@ -1,0 +1,36 @@
+{
+    "type": "multi-answer",
+    "question": "If solve(k) is the maximum amount you can drink from the first k bottles, and v(n) is the volume of the n'th bottle, which definitions below are part of the recurrence relation?",
+    "options": [
+        {
+            "id": "1",
+            "answer": "base case: solve(0) = 0, solve(1) = v(1), solve(2) = max{solve(1), solve(2)}",
+            "correct": true
+        },
+        {
+            "id": "2",
+            "answer": "base case: solve(0) = 0, solve(1) = v(1), solve(2) = solve(0) + solve(1)",
+            "correct": false
+        },
+        {
+            "id": "3",
+            "answer": "base case: solve(0) = 0, solve(1) = v(1), solve(2) = v(2)",
+            "correct": false
+        },
+        {
+            "id": "4",
+            "answer": "recurrence: solve(n) = max{solve(n-2), solve(n-1)}",
+            "correct": false
+        },
+        {
+            "id": "5",
+            "answer": "recurrence: solve(n) = v(n) + max{solve(n-2), solve(n-1)}",
+            "correct": false
+        },
+        {
+            "id": "6",
+            "answer": "recurrence: solve(n) = max{v(n) + solve(n-2), solve(n-1)}",
+            "correct": true
+        }
+    ]
+}
