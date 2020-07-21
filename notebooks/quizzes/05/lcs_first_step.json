@@ -1,0 +1,32 @@
+{
+    "type": "multi-answer",
+    "question": "How will you rephrase the problem statement in your first step?",
+    "options": [
+        {
+            "id": "1",
+            "answer": "Find the longest common substring",
+            "correct": false
+        },
+        {
+            "id": "2",
+            "answer": "Find the length of the longest common substring.",
+            "correct": false
+        },
+        {
+            "id": "3",
+            "answer": "Find all the common substrings.",
+            "correct": false
+        },
+        {
+            "id": "4",
+            "answer": "Find all the lengths of the common substrings.",
+            "correct": true
+        },
+        {
+            "id": "5",
+            "answer": "Find all the lengths of the longest common substring.",
+            "correct": false
+        }
+
+    ]
+}

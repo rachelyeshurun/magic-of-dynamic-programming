@@ -1,0 +1,36 @@
+{
+    "type": "multi-answer",
+    "question": "Select the statements that are true for the recurrence relation.",
+    "options": [
+        {
+            "id": "1",
+            "answer": "The base case is only when both strings have length 0",
+            "correct": false
+        },
+        {
+            "id": "2",
+            "answer": "The base case is only when the 1st string has length 0",
+            "correct": false
+        },
+        {
+            "id": "3",
+            "answer": "The base case is only when the 2nd string has length 0",
+            "correct": false
+        },
+        {
+            "id": "4",
+            "answer": "The recurrence relation finds the maximum over 3 values.",
+            "correct": true
+        },
+        {
+            "id": "5",
+            "answer": "If the last letter matches, the count is increased by 1",
+            "correct": true
+        },
+        {
+            "id": "6",
+            "answer": "The base case returns the current count.",
+            "correct": true
+        }
+    ]
+}
