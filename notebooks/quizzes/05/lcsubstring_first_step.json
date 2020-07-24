@@ -1,6 +1,6 @@
 {
     "type": "multi-answer",
-    "question": "How will you rephrase the problem statement in your first step?",
+    "question": "Which simplified rephrasings of the 'longest common substring' problem could be helpful to discoving its subproblems?",
     "options": [
         {
             "id": "1",
@@ -15,11 +15,11 @@
         {
             "id": "3",
             "answer": "Find all the common substrings.",
-            "correct": false
+            "correct": true
         },
         {
             "id": "4",
-            "answer": "Find all the lengths of the common substrings.",
+            "answer": "Find the lengths of all the common substrings.",
             "correct": true
         },
         {

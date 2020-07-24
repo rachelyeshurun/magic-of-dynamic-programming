@@ -1,0 +1,34 @@
+{
+    "type": "blanks",
+    "question": "Refer to the memoized recursive implementation of longest common subsequence.",
+    "sections": [
+        {
+            "id": "1",
+            "prefix": "How many cells are filled for the input X='abc' and Y='xyz'?",
+            "answer": "15",
+            "suffix": ".",
+            "hint": ""
+        },
+        {
+            "id": "2",
+            "prefix": "How many cells are filled for the input X='abc' and Y='abx'?",
+            "answer": "14",
+            "suffix": ".",
+            "hint": ""
+        },
+        {
+            "id": "3",
+            "prefix": "How many cells are filled for the input X='abc' and Y='abc'?",
+            "answer": "4",
+            "suffix": ".",
+            "hint": ""
+        },
+        {
+            "id": "4",
+            "prefix": "How many cells are filled for the input X='abc' and Y='xbc'?",
+            "answer": "5",
+            "suffix": ".",
+            "hint": ""
+        }
+    ]
+}

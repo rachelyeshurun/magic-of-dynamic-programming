@@ -1,0 +1,34 @@
+{
+    "type": "blanks",
+    "question": "Fill in the blanks: ",
+    "sections": [
+        {
+            "id": "1",
+            "prefix": "The longest subsequence that the words 'abcdef' and 'agjicf' have in common is: ",
+            "answer": "acf",
+            "suffix": ".",
+            "hint": ""
+        },
+        {
+            "id": "2",
+            "prefix": "It has a length of: ",
+            "answer": "3",
+            "suffix": ".",
+            "hint": ""
+        },
+        {
+            "id": "3",
+            "prefix": "The length of the longest common subsequence between an empty string '' and 'abcdef' is: ",
+            "answer": "0",
+            "suffix": ".",
+            "hint": ""
+        },
+        {
+            "id": "4",
+            "prefix": "The length of the longest common subsequence between 'abc' and 'cba' is: ",
+            "answer": "1",
+            "suffix": ".",
+            "hint": ""
+        }
+    ]
+}

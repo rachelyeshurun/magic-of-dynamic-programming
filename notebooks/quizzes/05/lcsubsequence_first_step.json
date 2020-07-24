@@ -1,0 +1,32 @@
+{
+    "type": "multi-answer",
+    "question": "What are some ways of thinking about the original phrasing of the 'longest common subsequence' problem that could be helpful to discovering its subproblems?",
+    "options": [
+        {
+            "id": "1",
+            "answer": "The optimization required is to maximize some value",
+            "correct": true
+        },
+        {
+            "id": "2",
+            "answer": "The optimization required is to minimize some value",
+            "correct": false
+        },
+        {
+            "id": "3",
+            "answer": "Start by considering all the ways you can find common subsequences.",
+            "correct": true
+        },
+        {
+            "id": "4",
+            "answer": "Start by considering all the ways you can find longest common subsequences.",
+            "correct": false
+        },
+        {
+            "id": "5",
+            "answer": "Start by considering what will be the base case.",
+            "correct": true
+        }
+
+    ]
+}
