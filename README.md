@@ -77,9 +77,9 @@
     * The worked problem for this lesson is 'Paths in a Grid'.
     
     
-   * [Lesson 5: Happiness and Pinecones]
+   * [Lesson 5: Happiness and Pinecones](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?urlpath=lab%2Ftree%2Fnotebooks%2F05_happiness_and_pinecones.ipynb)
     
-    * By the end of this lesson, you will know how to solve the 'longest common substring' problem.
+    * By the end of this lesson, you will know how to solve the 'longest common subsequence' problem.
     * You will learn to recognize another common subproblem pattern.
     * The worked problem for this lesson is 'Happiness and Pinecones'.
     
@@ -102,58 +102,30 @@
 
 <h2 id="introduction">Introduction</h2>
 
-Dynamic programming has the reputation for being tricky to master. 
+Dynamic programming has the reputation for being tricky to master, but once you understand the basic concepts and practice them enough, the algorithms do not seem so difficult anymore.
 
-- [ ] TODO
+My hope is that this lightweight course will serve as a primer for students to prepare for other, more rigorous algorithm courses at university.
 
 <h3 id="audience">Who is this course for?</h3>
 
-- [ ] TODO
+This course requires the level of computer science knowledge of a first year, first degree student.
+Some knowledge of Python is necessary to complete the coding exercises.
+
+This course is designed to be taken over a few hours, for example as a weekend project. The 
 
 <h3 id="usage">How to run and view this course</h2>
 
-This course is designed to be taken over a few hours, for example, as a weekend project.
+To see all the notebooks click on this [link](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?urlpath=lab%2Ftree%2Fnotebooks)
+
+Alternatively, navigage to each notebook from the table of contents above. When you click on a notebook link, a fully interactive classroom session will launch within 30 seconds in your browser _without any setup_ or installation!
+
+Note: The session might take some time to open, or it might not build on your first try. Be patient or try clicking the link again.
 
 The notebooks have short embedded videos to start off each new topic.  Watch the video, read the explanation and test your understanding with some quick quizzes.<br> Follow along with a worked example, then try your hand at the coding exercises. In these problem sets you will get a chance to apply the techniques learned up to that point. Try to work the problems out on your own before peeking at the answers :wink:
 
-The notebooks are best viewed in order, as each one builds atop the previous ones.
+The notebooks should be __viewed in order!!__ The lessons build on each other, so skipping around is not recommended.
 
-See the following sections for 3 easy ways to enter the classroom. You can use the table below to decide which method to use.
-
-| Advantage | [Option 1: Use Binder](#binder) | [Option 2: Your own setup](#setup) | [Option 3: Just browse  this repo](#browse) |
-| --------- | -----------------| -------------------------| ----------------------|
-| **No installation required** | :heavy_check_mark: | :x:   |:heavy_check_mark:|
-| **View course materials**  | :heavy_check_mark: | :heavy_check_mark:   | :heavy_check_mark:|
-| **Interact (code & quizzes)**  | :heavy_check_mark: | :heavy_check_mark:   | :x:|
-| **Loads fast** | :x: | :heavy_check_mark:   |:heavy_check_mark:|
-| **Stays open forever** | :x: | :heavy_check_mark:   |:heavy_check_mark:|
-| **Save your experiments** | :x: | :heavy_check_mark:   |:x:|
-
-
-<h4 id="binder"><strong>Option 1: </strong>Use Binder</h4>
-
-If you choose this option, navigage to each notebook from the table of contents above. When you click on a notebook link, a fully interactive classroom session will launch in your browser _without any setup_ or installation!
-
-Note: The session might take some time to open, or it might not build on your first try.
-
-<h4 id="setup"><strong>Option 2: </strong>Set up your own environment</h4>
-
-Setting up your environment is not difficult and allows you to interact with the notebooks **and** save your work.
-
-<h5 id="setup">Step 1: Download this repository</h5>
-
--[ ] screenshot
--[ ] git vs. zip
--[ ] extract zip
-
-<h5 id="setup">Step 2: Install a Python environment</h5>
-
-- [ ] anaconda
-- [ ] pip install .. TODO
-- [ ] Jupyter ..TODO
-
-
-<h5 id="setup">Step 2: Running the notebooks</h5>
+<h5 id="setup">Once you are in the notebooks:</h5>
 
 When the notebooks load, most elements such as videos, text and diagrams will be visible.
 The interactive quizzes don't always show up, you'll have to run the notebook to view them.
@@ -163,10 +135,6 @@ See this gif for how to run the whole notebook at once
 
 If running the whole notebook doesn't show the quizzes, you can run cells individually as in the following gif.
 ![SegmentLocal](images/run_one.gif "segment")
-
-<h4 id="browse"><strong>Option 3: </strong>Just browse</h4>
- 
-If you just want to watch the videos and read the notebooks without using their interactive elements, you can can browse the course by clicking on the links in the table of contents above.
 
 <h2 id="behind">Behind the Scenes</h2>
 This course was born as a final project for the course [CS6460 Education Technologoy](https://omscs.gatech.edu/cs-6460-educational-technology) taken during my Master's degree in Computer Science.
@@ -193,5 +161,5 @@ This [question and the answer](https://github.com/jupyter-widgets/ipywidgets/iss
 
 <h2 id="questions">Questions?</h2>
 
-Please use the `issues` tab of this repository to report any problems ... or just to say hi!
+Please use the `issues` tab of this repository to report any bugs or to request new features.
 ![image](images/issues.png)
