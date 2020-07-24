@@ -1,0 +1,32 @@
+{
+    "type": "multi-answer",
+    "question": "Suppose LCS('abcd', 'ad') is called. Which of the following could be subsequent calls?",
+    "options": [
+        {
+            "id": "1",
+            "answer": "LCS('abc', 'ad')",
+            "correct": false
+        },
+        {
+            "id": "2",
+            "answer": "LCS('abc', 'a')",
+            "correct": true
+        },
+        {
+            "id": "3",
+            "answer": "LCS('abc', '')",
+            "correct": true
+        },
+        {
+            "id": "4",
+            "answer": "LCS('ab', 'a')",
+            "correct": true
+        },
+        {
+            "id": "5",
+            "answer": "LCS('a', '')",
+            "correct": false
+        }
+
+    ]
+}

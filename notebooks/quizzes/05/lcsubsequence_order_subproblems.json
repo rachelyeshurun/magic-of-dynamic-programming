@@ -1,0 +1,42 @@
+{
+    "type": "blanks",
+    "question": "Order the following subproblems of LCS('abcd', 'bde') - longest common subsequence - from smallest to largest, entering the numbers 1-5 before the function call.",
+    "sections": [
+         {
+            "id": "2",
+            "prefix": "",
+            "answer": "4",
+            "suffix": "LCS('ab', 'bd')",
+            "hint": ""
+        },
+        {
+            "id": "4",
+            "prefix": "",
+            "answer": "1",
+            "suffix": "LCS('a', '')",
+            "hint": ""
+        },
+        {
+            "id": "3",
+            "prefix": "",
+            "answer": "3",
+            "suffix": "LCS('ab', 'b')",
+            "hint": ""
+        },
+        {
+            "id": "1",
+            "prefix": "",
+            "answer": "5",
+            "suffix": "LCS('abc', 'bd')",
+            "hint": ""
+        },
+        {
+            "id": "4",
+            "prefix": "",
+            "answer": "2",
+            "suffix": "LCS('a', 'b')",
+            "hint": ""
+        }
+
+    ]
+}

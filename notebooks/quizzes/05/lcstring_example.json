@@ -1,0 +1,27 @@
+{
+    "type": "blanks",
+    "question": "Fill in the blanks: ",
+    "sections": [
+        {
+            "id": "1",
+            "prefix": "The longest substring that the words 'dynamic' and 'program' have in common is: ",
+            "answer": "am",
+            "suffix": ".",
+            "hint": ""
+        },
+        {
+            "id": "2",
+            "prefix": "It has a length of",
+            "answer": "2",
+            "suffix": ".",
+            "hint": ""
+        },
+        {
+            "id": "3",
+            "prefix": "If we look at the strings: 'dynamic' and 'programming', there is another longest common substring with the same length. It is: ",
+            "answer": "mi",
+            "suffix": ".",
+            "hint": ""
+        }
+    ]
+}

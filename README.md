@@ -73,13 +73,14 @@
    * [Lesson 4: Paths in a Grid]
     
     * By the end of this lesson, you will have practiced the 4 steps on a 2 dimensional problem.
+    * You will learn to recognize the 'count the number of' pattern
     * The worked problem for this lesson is 'Paths in a Grid'.
     
     
    * [Lesson 5: Happiness and Pinecones]
     
     * By the end of this lesson, you will know how to solve the 'longest common substring' problem.
-    * You will learn that there are 4 common subproblem types and how to recognize them.
+    * You will learn to recognize another common subproblem pattern.
     * The worked problem for this lesson is 'Happiness and Pinecones'.
     
    * [Lesson 6: Flower Picking]
