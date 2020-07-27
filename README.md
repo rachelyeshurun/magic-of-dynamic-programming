@@ -33,8 +33,6 @@
     * [Credit](#credit)
         * [Lesson Plans & Pedagogy](#pedagogy)
         * [Other great notebooks](#inspiration)
-
-
   * [The Lessons](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?urlpath=lab%2Ftree%2Fnotebooks)
 
 
@@ -83,7 +81,7 @@
     * You will learn to recognize another common subproblem pattern.
     * The worked problem for this lesson is 'Happiness and Pinecones'.
     
-   * [Lesson 6: Flower Picking]
+   * [Lesson 6: Flower Picking](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?urlpath=lab%2Ftree%2Fnotebooks%2F06_flower_picking.ipynb)
     
     * By the end of this lesson, you will know how to solve the 'longest increasing subsequence' problem.
     * The worked problem for this lesson is 'Flower Picking'.
@@ -113,32 +111,51 @@ Some knowledge of Python is necessary to complete the coding exercises.
 
 This course is designed to be taken over a few hours, for example as a weekend project. The 
 
-<h3 id="usage">How to run and view this course</h2>
+<h3 id="usage">How to view this course</h2>
 
 To see all the notebooks click on this [link](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?urlpath=lab%2Ftree%2Fnotebooks)
 
-Alternatively, navigage to each notebook from the table of contents above. When you click on a notebook link, a fully interactive classroom session will launch within 30 seconds in your browser _without any setup_ or installation!
+Alternatively, navigate to each notebook from the table of contents above. When you click on a notebook link, a fully interactive classroom session will launch within 30 seconds in your browser _without any setup_ or installation!
 
 Note: The session might take some time to open, or it might not build on your first try. Be patient or try clicking the link again.
+
+<h4 id="binder">Binder launches the course notebooks</h4>
+
+<figure>
+    <img src="images/notebooks_in_binder.png" alt="after launch" width="50%">
+    <figcaption>After launching the binder of notebooks, click on a notebook in the left panel
+    </figcaption>
+</figure>
+
+<h4 id="learning_path">Recommended learning path</h4>
 
 The notebooks have short embedded videos to start off each new topic.  Watch the video, read the explanation and test your understanding with some quick quizzes.<br> Follow along with a worked example, then try your hand at the coding exercises. In these problem sets you will get a chance to apply the techniques learned up to that point. Try to work the problems out on your own before peeking at the answers :wink:
 
 The notebooks should be __viewed in order!!__ The lessons build on each other, so skipping around is not recommended.
 
-<h5 id="setup">Once you are in the notebooks:</h5>
+<h4 id="quizzes">Viewing quizzes</h4>
 
 When the notebooks load, most elements such as videos, text and diagrams will be visible.
-The interactive quizzes don't always show up, you'll have to run the notebook to view them.
+If quizzes don't show up, just __run the whole notebook (Run All Cells)__ and the quizzes should appear within a few seconds
     
-See this gif for how to run the whole notebook at once
-![SegmentLocal](images/run_all.gif "segment")
+<figure>
+    <img src="images/fix_empty_quiz.gif" alt="after launch" width="75%">
+    <figcaption>
+    </figcaption>
+</figure>
 
-If running the whole notebook doesn't show the quizzes, you can run cells individually as in the following gif.
-![SegmentLocal](images/run_one.gif "segment")
+Sometimes the quizzes show up with little broken links. Again, just __run all cells__ and that should fix the problem.
+
+<figure>
+    <img src="images/fix_broken_quiz.gif" alt="after launch" width="75%">
+    <figcaption>
+    </figcaption>
+</figure>
+
 
 <h2 id="behind">Behind the Scenes</h2>
 This course was born as a final project for the course [CS6460 Education Technologoy](https://omscs.gatech.edu/cs-6460-educational-technology) taken during my Master's degree in Computer Science.
-[![milestone 1](https://imgur.com/bGE9ttJ.png)](https://youtu.be/bh4HpT7Da2s?t=0s "milestone 1")
+[![The Making of Magic](https://imgur.com/bGE9ttJ.png)](https://youtu.be/bh4HpT7Da2s?t=0s "milestone 1")
 
 <h3 id="credit">Credit and Thanks</h3>
 
@@ -148,8 +165,7 @@ Aside from the obligation to give credit where it's due, the following links may
 
 This course is an implementation of the article 'Towards a Better Way to Teach Dynamic Programming' (Forišek, 2015).<br>
 The notebooks follow the 8 lesson plans described in the article, expanding the lesson outlines with additional explanations and original content.
-
-- [ ]     
+   
 <h4 id="inspiration">Other great notebooks</h4>
 In developing this course I was inspired by many other educational projects
 
@@ -161,5 +177,5 @@ This [question and the answer](https://github.com/jupyter-widgets/ipywidgets/iss
 
 <h2 id="questions">Questions?</h2>
 
-Please use the `issues` tab of this repository to report any bugs or to request new features.
+Please use the `issues` tab of this repository to report any bugs and request new features.
 ![image](images/issues.png)
