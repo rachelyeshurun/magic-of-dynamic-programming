@@ -25,7 +25,7 @@
     * [Who is this course for?](#audience)
     * [How to view this course](#usage)
   * [Behind the Scenes](#behind)
-    * Video - [The Making of 'Magic](https://youtu.be/bh4HpT7Da2s)
+    * Video - [The Making of 'Magic'](https://youtu.be/8VRyEYa-YFE)
     * [Credit](#credit)
         * [Lesson Plans & Pedagogy](#pedagogy)
         * [Other great notebooks](#inspiration)
@@ -105,11 +105,11 @@ My hope is that this lightweight course will serve as a primer for students to p
 This course requires the level of computer science knowledge of a first year, first degree student.
 Some knowledge of Python is necessary to complete the coding exercises.
 
-This course is designed to be taken over a few hours, for example as a weekend project. The 
+This course is designed to be taken over a few hours, for example as a weekend project.
 
 <h3 id="usage">How to view this course</h2>
 
-To see all the notebooks click on this [link](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?urlpath=lab%2Ftree%2Fnotebooks)
+To see all the notebooks click [here](https://mybinder.org/v2/gh/rachelyeshurun/magic-of-dynamic-programming/master?urlpath=lab%2Ftree%2Fnotebooks)
 
 Alternatively, navigate to each notebook from the table of contents above. When you click on a notebook link, a fully interactive classroom session will launch within 30 seconds in your browser _without any setup_ or installation!
 
@@ -150,8 +150,7 @@ Sometimes the quizzes show up with little broken links. Again, just __run all ce
 
 
 <h2 id="behind">Behind the Scenes</h2>
-This course was born as a final project for the course [CS6460 Education Technologoy](https://omscs.gatech.edu/cs-6460-educational-technology) taken during my Master's degree in Computer Science.
-[![The Making of Magic](https://imgur.com/bGE9ttJ.png)](https://youtu.be/bh4HpT7Da2s?t=0s "milestone 1")
+This course was born as a final project for the course [CS6460 Education Technologoy](https://omscs.gatech.edu/cs-6460-educational-technology) taken during my Master's degree in Computer Science and presented [here](https://youtu.be/8VRyEYa-YFE)
 
 <h3 id="credit">Credit and Thanks</h3>
 
