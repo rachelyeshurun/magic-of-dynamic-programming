@@ -8,10 +8,6 @@
 <img src="https://img.shields.io/badge/last%20updated-July%202020-blue">
 </p>
 
-<p>
-<a href="https://www.freecodecamp.org/news/how-open-source-licenses-work-and-how-to-add-them-to-your-projects-34310c3cf94/">
-</p>
-
 <p align="center">
   Does dynamic progrmming seem like dark magic to you?<br>
   Do you wish there was a step-by-step approach to any dynamic programming problem thrown at you?<br>
