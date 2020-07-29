@@ -1,3 +1,4 @@
 ipywidgets
 igraph
+pycairo
 jupyter_contrib_nbextensions

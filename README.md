@@ -8,10 +8,6 @@
 <img src="https://img.shields.io/badge/last%20updated-July%202020-blue">
 </p>
 
-<p>
-<a href="https://www.freecodecamp.org/news/how-open-source-licenses-work-and-how-to-add-them-to-your-projects-34310c3cf94/">
-</p>
-
 <p align="center">
   Does dynamic progrmming seem like dark magic to you?<br>
   Do you wish there was a step-by-step approach to any dynamic programming problem thrown at you?<br>
@@ -154,6 +150,7 @@ Sometimes the quizzes show up with little broken links. Again, just __run all ce
 
 
 <h2 id="behind">Behind the Scenes</h2>
+
 This course was born as a final project for the course [CS6460 Education Technologoy](https://omscs.gatech.edu/cs-6460-educational-technology) taken during my Master's degree in Computer Science.
 [![The Making of Magic](https://imgur.com/bGE9ttJ.png)](https://youtu.be/bh4HpT7Da2s?t=0s "milestone 1")
 
