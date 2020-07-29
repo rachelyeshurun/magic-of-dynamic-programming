@@ -150,6 +150,7 @@ Sometimes the quizzes show up with little broken links. Again, just __run all ce
 
 
 <h2 id="behind">Behind the Scenes</h2>
+
 This course was born as a final project for the course [CS6460 Education Technologoy](https://omscs.gatech.edu/cs-6460-educational-technology) taken during my Master's degree in Computer Science and presented [here](https://youtu.be/8VRyEYa-YFE)
 
 <h3 id="credit">Credit and Thanks</h3>
