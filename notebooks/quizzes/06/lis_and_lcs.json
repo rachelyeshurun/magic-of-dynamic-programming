@@ -1,0 +1,13 @@
+{
+    "type": "blanks",
+    "question": "On a piece of paper, write out the longest common subsequence between [4,5,3,2,1,6] and [1,2,3,4,5,6]. Underneath, write out the numbers 1, 2, 3, 4, 5, 6 (in increasing order). Draw a line between matching numbers.",
+    "sections": [
+        {
+            "id": "1",
+            "prefix": "How many times do the lines cross?: ",
+            "answer": "0",
+            "suffix": ".",
+            "hint": ""
+        }   
+    ]
+}

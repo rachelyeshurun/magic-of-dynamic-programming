@@ -4,7 +4,7 @@
     "sections": [
         {
             "id": "1",
-            "prefix": "The length of the longest increasing subsequence of [4,3,2,1] is: ",
+            "prefix": "The *length* of the longest increasing subsequence of [4,3,2,1] is: ",
             "answer": "1",
             "suffix": ".",
             "hint": ""
@@ -18,15 +18,8 @@
         },
         {
             "id": "3",
-            "prefix": "The longest common subsequence between [4,5,3,2,1,6] and [1,2,3,4,5,6] is:",
+            "prefix": "The longest increasing subsequence of [4,5,3,2,1,6] is:",
             "answer": "[4,5,6]",
-            "suffix": ".",
-            "hint": ""
-        },
-        {
-            "id": "4",
-            "prefix": "If you draw lines between the equal numbers in the sequences above e.g. 1 with 1, 2 with 2, ..., 6 with 6, how many times would the lines cross?: ",
-            "answer": "0",
             "suffix": ".",
             "hint": ""
         }
