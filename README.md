@@ -105,7 +105,7 @@ My hope is that this lightweight course will serve as a primer for students to p
 This course requires the level of computer science knowledge of a first year, first degree student.
 Some knowledge of Python is necessary to complete the coding exercises.
 
-This course is designed to be taken over a few hours, for example as a weekend project. The 
+This course is designed to be taken over a few hours, for example as a weekend project.
 
 <h3 id="usage">How to view this course</h2>
 
